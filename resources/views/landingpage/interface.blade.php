@@ -20,7 +20,7 @@
     font-family: 'Poppins', sans-serif;
   }
 </style>
-<body>
+<body class="bg-white">
   {{-- Navbar --}}
     <header class="green p-5">
         <nav class="md:flex md:items-center md:flex-row md:justify-between">
@@ -36,7 +36,7 @@
             </div>
             <ul
                 class="green space-x-3 md:flex md:justify-center md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-                <li class="md:mx-0 mx-4 my-6 md:my-0"><a href=""
+                <li class="md:mx-0 mx-4 my-6 md:my-0"><a href="#home"
                         class="text-white text-sm hover:underline cursor-pointer transition duration-300 p-3">Home</a></li>
                 <li class="md:mx-0 my-6 md:my-0"><a href=""
                         class="text-white text-sm hover:underline cursor-pointer transition duration-300 p-3">Tentang Kami</a></li>
@@ -72,7 +72,7 @@
     {{-- end interface --}}
 
     {{-- About Start --}}
-    <section id="tentangkami">
+    <section class="bg-white" id="tentangkami">
 
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="md:ml-32 mt-8 md:mt-16">
@@ -87,7 +87,7 @@
     </div>
     </section>
     {{-- about 2 --}}
-    <div class="grid grid-cols-1 md:grid-cols-2">
+    <div class="bg-white grid grid-cols-1 md:grid-cols-2">
       <div class="md:ml-36 md:mt-24 px-6 order-last md:order-first">
         <h1 class="text-4xl font-bold green1 opacity-75">Dengan Desaku</h1>
         <h3 class="font-semibold mt-6">Pertukaran informasi efektif</h3>

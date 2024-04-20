@@ -4,10 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   @vite('resources/css/app.css')
-  <title>Aktivitas User - Desaku</title>
+  <title>Aktivitas Admin - Desaku</title>
   <link href="{{ asset('css/landingpage.css') }}" rel="stylesheet">
 </head>
-<body>
+<style>
+    .bg-gray-300 {
+        min-height: 100vh;
+    }
+</style>
+<body class="bg-gray-300">
   <nav class="green py-2">
     <div class="container mx-auto flex justify-between items-center">
         <div>
@@ -27,6 +32,12 @@
         <a href="{{ route('wargauser') }}" class="md:green hover:green md:text-sm text-white text-xs py-2 px-2 mx-4 md:mx-24">WARGA </a>
         <a href="{{ route('pengumumanuser') }}" class="md:green hover:green md:text-sm text-white text-xs py-2 px-2 mx-4 md:mx-24 ">PENGUMUMAN </a>
       </div>
+
+      <footer class="text-gray-500 mt-4 fixed bottom-3 w-full">
+        <div class="container mx-auto text-center">
+            <p class="text-xs md:text-sm">&copy; 2024. All Right Reserved. By Punokawan Project</p>
+        </div>
+    </footer>
       
 </body>
 </html>
