@@ -55,13 +55,13 @@
     {{-- Interface  --}}
     <section id="home" class="md:pt-16 md:pb-8 md:pl-16 green text-white">
       <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center md:px-4 md:w-1/2 md:flex-col-reverse md:order-first">
+        <div class="flex flex-wrap pb-32 md:pb-0">
+          <div class=" z-10 w-full self-center md:px-4 md:w-1/2 md:flex-col-reverse md:order-first">
             <h1 class="font-bold text-2xl text-center mt-8 md:text-left mb-2 md:text-4xl">Desaku</h1>
             <p class="text-sm md:mb-4 text-center md:text-left px-2 md:leading-relaxed">Desaku adalah platform yang memudahkan pertukaran informasi di tingkat RT atau RW. Dengan aplikasi "Desaku", interaksi dan koordinasi antarawarga, pengurus RT/RW, dan pemerintah setempat dapat ditingkatkan, menciptakan komunitas yang lebih terinformasi dan terkoneksi.</p>
             <a href="{{ route('login') }}" class="hidden md:inline-block text-sm font-semibold bg-white text-green-800 py-1 px-8 rounded hover:shadow-lg hover:bg-blue-400 hover:text-white hover:opacity-80 transition duration-300 ease-in-out">Get Started</a>
           </div>
-          <div class="w-full md:self-end md:px-4 md:w-1/2 md:order-last">
+          <div class="z-0 opacity-20 md:opacity-1 absolute md:static w-full md:self-end md:px-4 md:w-1/2 md:order-last">
             <div class="relative md:m-10 md:mt-9 md:right-0">
               <img src="img/house.png" alt="Picture 1" class="md:max-w-full mt-8 mx-auto pb-10 px-4">
             </div>
