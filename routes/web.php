@@ -33,6 +33,12 @@ Route::get('/aktivitasadmin', [AdminController::class, 'aktivitasadmin'])->name(
 Route::get('/wargaadmin', [AdminController::class, 'wargaadmin'])->name('wargaadmin');
 Route::get('/pengumumanadmin', [AdminController::class, 'pengumumanadmin'])->name('pengumumanadmin');
 
+// Admin opsi
+Route::get('/laporanpencurianadmin', [AdminController::class, 'laporanpencurianadmin'])->name('laporanpencurianadmin');
+Route::get('/laporankebakaranadmin', [AdminController::class, 'laporankebakaranadmin'])->name('laporankebakaranadmin');
+Route::get('/laporanbencanaadmin', [AdminController::class, 'laporanbencanaadmin'])->name('laporanbencanaadmin');
+Route::get('/laporankecelakaanadmin', [AdminController::class, 'laporankecelakaanadmin'])->name('laporankecelakaanadmin');
+
 // User 
 Route::get('/aktivitasuser', [UserController::class, 'aktivitasuser'])->name('aktivitasuser');
 Route::get('/wargauser', [UserController::class, 'wargauser'])->name('wargauser');

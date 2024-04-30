@@ -16,10 +16,6 @@
       font-family: 'Poppins', sans-serif;
     }
 
-    input:focus::placeholder {
-        font-size: 12px;
-    }
-
   </style>
 <body class="flex green flex-col h-screen">
     <div class="flex justify-between items-center ">
@@ -34,20 +30,24 @@
     </div>
     <form action="{{route('postlogin')}}" method="post">
       @csrf
-    <div class="flex justify-center pt-16">
-      <div class="relative">
-        <input type="email" id="username" name="email" class="border-b py-1 px-8 green focus:outline-none focus:border-white focus:border-b-2 transition-colors peer" autocomplete="off" style="color: white;">
-        <label for="username" class="absolute left-0 top-1 text-white text-sm cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-white transition-all">Email / No. Hp</label>
-      </div>
-    </div>
-    <div class="flex justify-center pt-6">
-      <div class="relative">
-        <input type="password" id="password" name="password" class="border-b py-1 px-8 green focus:outline-none focus:border-white focus:border-b-2 transition-colors peer" autocomplete="off" style="color: white;">
-        <label for="password" class="absolute left-0 text-white text-sm cursor-text peer-focus:text-xs peer-focus:-top-4 peer-focus:text-white transition-all">Password</label>
-      </div>
-    </div>
-    <div class="flex justify-center pt-10">
-      <button class="bg-white hover:bg-gray-300 text-green font-bold py-1.5 px-3 rounded-full transition duration-300 mx-auto w-64">Login</button>
+      <div class="flex justify-center pt-16">
+        <div>
+          <label class="form-control w-full max-w-xs">
+            <div class="label">
+              <span class="label-text text-white">Email</span>
+            </div>
+            <input type="text" placeholder="Masukan email" class="input text-white input-bordered bg-transparent w-full max-w-xs" />
+          </label>
+          <label class="form-control w-full max-w-xs">
+            <div class="label">
+              <span class="label-text text-white">Password</span>
+            </div>
+            <input type="text" placeholder="Masukan password" class="input input-bordered  bg-transparent  w-full max-w-xs" />
+          </label>
+          <div class="flex justify-center pt-5">
+            <button class="bg-white hover:bg-gray-300 text-green font-bold py-1.5 px-3 rounded-full transition duration-300 mx-auto w-64">Login</button>
+          </div>
+        </div>
     </div>
   </form>
     <footer class="text-white fixed bottom-3 w-full">

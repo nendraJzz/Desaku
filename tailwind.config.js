@@ -6,7 +6,14 @@ export default {
     "./resources/**/*.vue",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'abuu': '#5F5F5F',
+        'red': '#CA4040',
+        'yelow': '#FAFF00',
+        'gren': '#A2E36F'
+      }
+    },
   },
   plugins: [require("daisyui")],
 }

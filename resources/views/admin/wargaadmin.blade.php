@@ -17,6 +17,7 @@
   {{-- Navbar --}}
   <nav class="green py-2">
     <div class="container mx-auto flex justify-between items-center">
+      <div></div>
         <div class="flex items-center">
             <span class="text-sm md:text-2xl text-white ml-4 md:ml-12 font-semibold text-center md:text-left">Desaku</span>
         </div>
@@ -43,7 +44,24 @@
             <div class="text-sm">Pengurus RT</div>
             <div class="text-sm">+628876854778</div>
           </div>
-          <ion-icon name="chevron-forward-outline" class="w-10 h-10 ml-auto fill-cureent text-green" onclick="showProfile(' Nama : Raffy Ahmad', ' Pekerjaan : Artis', 'No. Hp : +628876854778')"></ion-icon>
+          <ion-icon name="chevron-forward-outline" class="w-10 h-10 cursor-pointer ml-auto fill-cureent text-green" onclick="my_modal_3.showModal()"></ion-icon>
+        <dialog id="my_modal_3" class="modal">
+          <div class="modal-box bg-white w-80">
+            <form method="dialog">
+              <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+            </form>
+            <div class="flex flex-col justify-center">
+              <div class="flex justify-center">
+                <img src="img/raffy-ahmad.jpg" class="rounded-full w-24 h-24 " alt="">
+              </div>
+            <div class="text-center text-gray-700">
+              <p class="py-4">Nama : Raffy Ahmad</p>
+              <p class="py-4">Pekerjaan : Artis</p>
+              <p class="py-4">No.Hp : +628876854778</p>
+            </div>
+            </div>
+          </div>
+        </dialog>
         </div>
       
         <div class="flex items-center bg-white p-4 shadow-md rounded-2xl">
