@@ -44,4 +44,8 @@ Route::get('/aktivitasuser', [UserController::class, 'aktivitasuser'])->name('ak
 Route::get('/wargauser', [UserController::class, 'wargauser'])->name('wargauser');
 Route::get('/pengumumanuser', [UserController::class, 'pengumumanuser'])->name('pengumumanuser');
 
-
+// User Opsi
+Route::get('/laporanpencurianuser', [UserController::class, 'laporanpencurianuser'])->name('laporanpencurianuser');
+Route::get('/laporankebakaranuser', [UserController::class, 'laporankebakaranuser'])->name('laporankebakaranuser');
+Route::get('/laporanbencanauser', [UserController::class, 'laporanbencanauser'])->name('laporanbencanauser');
+Route::get('/laporankecelakaanuser', [UserController::class, 'laporankecelakaanuser'])->name('laporankecelakaanuser');

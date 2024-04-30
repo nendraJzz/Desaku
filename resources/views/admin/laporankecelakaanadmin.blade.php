@@ -15,6 +15,7 @@
 <body class="bg-gray-300">
   <nav class="green py-2">
     <div class="container mx-auto flex justify-between items-center">
+        <a href="/aktivitasadmin"><img src="img/back.png" alt="" ></a>
         <div>
             <span class="text-sm md:text-2xl text-white ml-4 md:ml-12 font-semibold text-center md:text-left">Desaku</span>
         </div>
