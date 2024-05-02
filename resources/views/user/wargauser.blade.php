@@ -12,6 +12,7 @@
   {{-- Navbar --}}
   <nav class="green py-2">
     <div class="container mx-auto flex justify-between items-center">
+      <div></div>
         <div class="flex items-center">
             <span class="text-sm md:text-2xl text-white ml-4 md:ml-12 font-semibold text-center md:text-left">Desaku</span>
         </div>
@@ -38,7 +39,7 @@
             <div class="text-sm">Pengurus RT</div>
             <div class="text-sm">+628876854778</div>
           </div>
-          <ion-icon name="chevron-forward-outline" class="w-10 h-10 ml-auto fill-cureent text-green"></ion-icon>
+          {{-- <ion-icon name="chevron-forward-outline" class="w-10 h-10 ml-auto fill-cureent text-green"></ion-icon> --}}
         </div>
       
         <div class="flex items-center bg-white p-4 shadow-md rounded-2xl">
@@ -48,7 +49,7 @@
             <div class="text-sm">Warga</div>
             <div class="text-sm">+6287689876543</div>
           </div>
-          <ion-icon name="chevron-forward-outline" class="w-10 h-10 ml-auto fill-cureent text-green"></ion-icon>
+          {{-- {{-- <ion-icon name="chevron-forward-outline" class="w-10 h-10 ml-auto fill-cureent text-green"></ion-icon> --}} 
         </div>
       
         <div class="flex items-center bg-white p-4 shadow-md rounded-2xl">
@@ -58,7 +59,7 @@
             <div class="text-sm">Warga</div>
             <div class="text-sm">+6285765787654</div>
           </div class="text-green">
-          <ion-icon name="chevron-forward-outline" class="w-10 h-10 ml-auto fill-cureent text-green"></ion-icon>
+          {{-- {{-- <ion-icon name="chevron-forward-outline" class="w-10 h-10 ml-auto fill-cureent text-green"></ion-icon> --}} 
         </div>
       
         <div class="flex items-center bg-white p-4 shadow-md rounded-2xl">
@@ -68,7 +69,7 @@
             <div class="text-sm">Warga</div>
             <div class="text-sm">+6281465574878</div>
           </div>
-          <ion-icon name="chevron-forward-outline" class="w-10 h-10 ml-auto fill-cureent text-green"></ion-icon>
+          {{-- {{-- <ion-icon name="chevron-forward-outline" class="w-10 h-10 ml-auto fill-cureent text-green"></ion-icon> --}} 
         </div>
       
         <div class="flex items-center bg-white p-4 shadow-md rounded-2xl">
@@ -78,7 +79,7 @@
             <div class="text-sm">Warga</div>
             <div class="text-sm">+62987854778</div>
           </div>
-          <ion-icon name="chevron-forward-outline" class="w-10 h-10 ml-auto fill-cureent text-green"></ion-icon>
+          {{-- {{-- <ion-icon name="chevron-forward-outline" class="w-10 h-10 ml-auto fill-cureent text-green"></ion-icon> --}} 
         </div>
       
         <div class="flex items-center bg-white p-4 shadow-md rounded-2xl">
@@ -88,12 +89,46 @@
             <div class="text-sm">Warga</div>
             <div class="text-sm">+62897563456</div>
           </div>
-          <ion-icon name="chevron-forward-outline" class="w-10 h-10 ml-auto fill-cureent text-green"></ion-icon>
+          {{-- {{-- <ion-icon name="chevron-forward-outline" class="w-10 h-10 ml-auto fill-cureent text-green"></ion-icon> --}} 
         </div>
       </div>
       {{-- End Content --}}
-      
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>   
+      <div class="relative h-screen">
+        <button class="fixed bottom-4 right-4 font-bold" onclick="user.showModal()">
+          <img src="img/opsi.png" alt="Logo" class="h-13 w-13">
+        </button>
+      </div>
+    <dialog id="user" class="modal">
+    <div class="modal-box bg-white w-80">
+        <form method="dialog">
+        <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+        </form>
+        <div class="grid text-white text-center grid-cols-2 gap-4 p-2">
+        
+            <a href="{{ route('laporanpencurianuser') }}" class="bg-abuu p-5 flex flex-col justify-center items-center rounded-xl">
+                <img src="/img/pencurian.png" alt="">
+                <p class="text-center text-white">Pencurian</p>
+            </a>
+            <a  href="{{ route('laporankebakaranuser') }}" class="bg-red p-5 flex flex-col justify-center items-center rounded-xl">
+                <img src="/img/kebakaran.png" alt="">
+                <p>Kebakaran</p>
+            </a>
+            <a  href="{{ route('laporankecelakaanuser') }}" class="bg-yelow p-5 flex flex-col justify-center items-center rounded-xl">
+                <img src="/img/kecelakaan.png" alt="">
+                <p>Kecelakaan</p>
+            </a>
+            <a  href="{{ route('laporanbencanauser') }}" class="bg-gren p-5 flex flex-col justify-center items-center rounded-xl">
+                <img src="/img/bencana.png" alt="">
+                <p>Bencana Alam</p>
+            </a>
+        </div>
+    </div>
+    </dialog>
+
+    <footer class="text-gray-500 mt-4 md:fixed bottom-3 w-full">
+      <div class="container mx-auto text-center">
+          <p class="text-xs md:text-sm">&copy; 2024. All Right Reserved. By Punokawan Project</p>
+      </div>
+  </footer>
 </body>
 </html>

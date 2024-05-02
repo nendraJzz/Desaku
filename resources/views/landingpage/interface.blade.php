@@ -20,7 +20,7 @@
     font-family: 'Poppins', sans-serif;
   }
 </style>
-<body>
+<body class="bg-white">
   {{-- Navbar --}}
     <header class="green p-5">
         <nav class="md:flex md:items-center md:flex-row md:justify-between">
@@ -36,7 +36,7 @@
             </div>
             <ul
                 class="green space-x-3 md:flex md:justify-center md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-                <li class="md:mx-0 mx-4 my-6 md:my-0"><a href=""
+                <li class="md:mx-0 mx-4 my-6 md:my-0"><a href="#home"
                         class="text-white text-sm hover:underline cursor-pointer transition duration-300 p-3">Home</a></li>
                 <li class="md:mx-0 my-6 md:my-0"><a href=""
                         class="text-white text-sm hover:underline cursor-pointer transition duration-300 p-3">Tentang Kami</a></li>
@@ -55,13 +55,13 @@
     {{-- Interface  --}}
     <section id="home" class="md:pt-16 md:pb-8 md:pl-16 green text-white">
       <div class="container">
-        <div class="flex flex-wrap">
-          <div class="w-full self-center md:px-4 md:w-1/2 md:flex-col-reverse md:order-first">
-            <h1 class="font-bold text-2xl text-center mt-8 md:text-left mb-2 md:text-4xl">Desaku</h1>
+        <div class="flex flex-wrap pb-32 md:pb-0">
+          <div class=" z-10 w-full self-center md:px-4 md:w-1/2 md:flex-col-reverse md:order-first">
+            <h1 class="font-bold text-2xl text-center mt-8 md:text-left mb-2 md:text-4xl">Dasaku</h1>
             <p class="text-sm md:mb-4 text-center md:text-left px-2 md:leading-relaxed">Desaku adalah platform yang memudahkan pertukaran informasi di tingkat RT atau RW. Dengan aplikasi "Desaku", interaksi dan koordinasi antarawarga, pengurus RT/RW, dan pemerintah setempat dapat ditingkatkan, menciptakan komunitas yang lebih terinformasi dan terkoneksi.</p>
             <a href="{{ route('login') }}" class="hidden md:inline-block text-sm font-semibold bg-white text-green-800 py-1 px-8 rounded hover:shadow-lg hover:bg-blue-400 hover:text-white hover:opacity-80 transition duration-300 ease-in-out">Get Started</a>
           </div>
-          <div class="w-full md:self-end md:px-4 md:w-1/2 md:order-last">
+          <div class="z-0 opacity-20 md:opacity-1 absolute md:static w-full md:self-end md:px-4 md:w-1/2 md:order-last">
             <div class="relative md:m-10 md:mt-9 md:right-0">
               <img src="img/house.png" alt="Picture 1" class="md:max-w-full mt-8 mx-auto pb-10 px-4">
             </div>
@@ -72,7 +72,7 @@
     {{-- end interface --}}
 
     {{-- About Start --}}
-    <section id="tentangkami">
+    <section class="bg-white" id="tentangkami">
 
       <div class="grid grid-cols-1 md:grid-cols-2">
         <div class="md:ml-32 mt-8 md:mt-16">
@@ -87,7 +87,7 @@
     </div>
     </section>
     {{-- about 2 --}}
-    <div class="grid grid-cols-1 md:grid-cols-2">
+    <div class="bg-white grid grid-cols-1 md:grid-cols-2">
       <div class="md:ml-36 md:mt-24 px-6 order-last md:order-first">
         <h1 class="text-4xl font-bold green1 opacity-75">Dengan Desaku</h1>
         <h3 class="font-semibold mt-6">Pertukaran informasi efektif</h3>
