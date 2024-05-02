@@ -26,7 +26,7 @@
         <nav class="md:flex md:items-center md:flex-row md:justify-between">
             <div class="flex flex-row justify-between items-center">
                 <span class="flex flex-row justify-between">
-                  <img src="{{ asset('img/logo.png') }}" class="w-32 mb-1 md:w-48 pb-3 md:pl-16" alt="Deskripsi Gambar">
+                  <a href="#"><img src="{{ asset('img/logo.png') }}" class="w-32 mb-1 md:w-48 pb-3 md:pl-16" alt="Deskripsi Gambar"></a>
                 </span>
 
                 <span class="text-4xl cursor-pointer md:hidden block">
@@ -36,11 +36,11 @@
             </div>
             <ul
                 class="green space-x-3 md:flex md:justify-center md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
-                <li class="md:mx-0 mx-4 my-6 md:my-0"><a href="#home"
+                <li class="md:mx-0 mx-4 my-6 md:my-0"><a href="#"
                         class="text-white text-sm hover:underline cursor-pointer transition duration-300 p-3">Home</a></li>
-                <li class="md:mx-0 my-6 md:my-0"><a href=""
+                <li class="md:mx-0 my-6 md:my-0"><a href="#tentangkami"
                         class="text-white text-sm hover:underline cursor-pointer transition duration-300 p-3">Tentang Kami</a></li>
-                <li class="md:mx-0 mx-4 my-6 md:my-0"><a href=""
+                <li class="md:mx-0 mx-4 my-6 md:my-0"><a href="#kontak"
                         class="text-white text-sm hover:underline cursor-pointer transition duration-300 p-3">Kontak</a></li>
                 <li class="md:mx-0 mx-2 my-6 md:my-0"><a href="{{ route('login') }}"
                         class="text-green bg-white font-semibold rounded text-sm px-6 py-1.5 me-2 mb-2 transition duration-300 hover:bg-blue-500 hover:text-white">Login
@@ -61,7 +61,7 @@
             <p class="text-sm md:mb-4 text-center md:text-left px-2 md:leading-relaxed">Desaku adalah platform yang memudahkan pertukaran informasi di tingkat RT atau RW. Dengan aplikasi "Desaku", interaksi dan koordinasi antarawarga, pengurus RT/RW, dan pemerintah setempat dapat ditingkatkan, menciptakan komunitas yang lebih terinformasi dan terkoneksi.</p>
             <a href="{{ route('login') }}" class="hidden md:inline-block text-sm font-semibold bg-white text-green-800 py-1 px-8 rounded hover:shadow-lg hover:bg-blue-400 hover:text-white hover:opacity-80 transition duration-300 ease-in-out">Get Started</a>
           </div>
-          <div class="z-0 opacity-20 md:opacity-1 absolute md:static w-full md:self-end md:px-4 md:w-1/2 md:order-last">
+          <div class="z-0 opacity-20 md:opacity-90 absolute md:static w-full md:self-end md:px-4 md:w-1/2 md:order-last">
             <div class="relative md:m-10 md:mt-9 md:right-0">
               <img src="img/house.png" alt="Picture 1" class="md:max-w-full mt-8 mx-auto pb-10 px-4">
             </div>
