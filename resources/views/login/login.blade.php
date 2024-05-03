@@ -28,24 +28,24 @@
             <p class="text-white text-xs mt-1">Tetap Terhubung Dengan Warga <br> Dan Lingkungan RT Anda</p>
         </div>
     </div>
-    <form action="{{route('postlogin')}}" method="post">
+    <form action="/postlogin" method="POST">
       @csrf
       <div class="flex justify-center pt-16">
         <div>
           <label class="form-control w-full max-w-xs">
             <div class="label">
-              <span class="label-text text-white">Email</span>
+              <span class="label-text text-white" >Email</span>
             </div>
-            <input type="text" placeholder="Masukan email" class="input text-white input-bordered bg-transparent w-full max-w-xs" />
+            <input type="email" name="email" placeholder="Masukan email" class="input text-white input-bordered bg-transparent w-full max-w-xs" />
           </label>
           <label class="form-control w-full max-w-xs">
             <div class="label">
               <span class="label-text text-white">Password</span>
             </div>
-            <input type="text" placeholder="Masukan password" class="input input-bordered  bg-transparent  w-full max-w-xs" />
+            <input type="password" name="password" placeholder="Masukan password" class="input text-white input-bordered  bg-transparent  w-full max-w-xs" />
           </label>
           <div class="flex justify-center pt-5">
-            <button class="bg-white hover:bg-gray-300 text-green font-bold py-1.5 px-3 rounded-full transition duration-300 mx-auto w-64">Login</button>
+            <button type="submit" class="bg-white hover:bg-gray-300 text-green font-bold py-1.5 px-3 rounded-full transition duration-300 mx-auto w-64">Login</button>
           </div>
         </div>
     </div>
