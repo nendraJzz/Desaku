@@ -22,7 +22,7 @@
 </style>
 <body class="bg-white">
   {{-- Navbar --}}
-    <header class="green p-5">
+    <header class="green p-5 z-30 relative">
         <nav class="md:flex md:items-center md:flex-row md:justify-between">
             <div class="flex flex-row justify-between items-center">
                 <span class="flex flex-row justify-between">
@@ -53,7 +53,7 @@
     {{-- End Navbar --}}
 
     {{-- Interface  --}}
-    <section id="home" class="md:pt-16 md:pb-8 md:pl-16 green text-white">
+    <section id="home z-10 relative" class="md:pt-16 md:pb-8 md:pl-16 green text-white">
       <div class="container">
         <div class="flex flex-wrap pb-32 md:pb-0">
           <div class=" z-10 w-full self-center md:px-4 md:w-1/2 md:flex-col-reverse md:order-first">
