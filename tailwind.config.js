@@ -11,7 +11,8 @@ export default {
         'abuu': '#5F5F5F',
         'red': '#CA4040',
         'yelow': '#FAFF00',
-        'gren': '#A2E36F'
+        'gren': '#A2E36F',
+        'abu2': '#3E4F4B'
       }
     },
   },

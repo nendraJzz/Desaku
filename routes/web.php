@@ -27,6 +27,8 @@ Route::get('/interface', [LandingpageController::class, 'interface'])->name('int
 // Login
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogin');
+// Logout
+Route::get('/logout',[LoginController::class,'logout'])->name('logout');
 
 // Admin
 Route::get('/aktivitasadmin', [AdminController::class, 'aktivitasadmin'])->name('aktivitasadmin');
