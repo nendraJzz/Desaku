@@ -32,5 +32,12 @@ class AdminController extends Controller
         return view('admin.laporankecelakaanadmin');
     }
 
+    //setting profile
+    public function settingprofileadmin(){
+        return view('admin.settingprofileadmin');
+    }
+
+
+
     
 }

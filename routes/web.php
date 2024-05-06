@@ -32,6 +32,9 @@ Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogi
 Route::get('/aktivitasadmin', [AdminController::class, 'aktivitasadmin'])->name('aktivitasadmin');
 Route::get('/wargaadmin', [AdminController::class, 'wargaadmin'])->name('wargaadmin');
 Route::get('/pengumumanadmin', [AdminController::class, 'pengumumanadmin'])->name('pengumumanadmin');
+// Admin Setting
+Route::get('/settingprofileadmin', [AdminController::class, 'settingprofileadmin'])->name('settingprofileadmin');
+
 
 // Admin opsi
 Route::get('/laporanpencurianadmin', [AdminController::class, 'laporanpencurianadmin'])->name('laporanpencurianadmin');

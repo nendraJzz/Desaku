@@ -20,9 +20,9 @@
             <span class="text-sm md:text-2xl text-white ml-4 md:ml-12 font-semibold text-center md:text-left">Desaku</span>
         </div>
         <div>
-            <button class="flex items-center text-white">
+            <a href ="{{ route('settingprofileadmin') }}" class="flex items-center text-white">
                 <img src="img/raffy-ahmad.jpg" alt="Profile" class="rounded-full w-6 h-6 md:w-9 md:h-9 mr-5">
-            </button>
+            </a>
         </div>
     </div>
 </nav>

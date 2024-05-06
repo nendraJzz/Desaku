@@ -21,7 +21,7 @@
         </div>
         <div>
             <button class="flex items-center text-white">
-                <img src="img/raffy-ahmad.jpg" alt="Profile" class="rounded-full w-6 h-6 md:w-9 md:h-9 mr-5">
+                <img src="img/img/ayu-ting-ting.jpg" alt="Profile" class="rounded-full w-6 h-6 md:w-9 md:h-9 mr-5">
             </button>
         </div>
     </div>
