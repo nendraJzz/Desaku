@@ -34,6 +34,16 @@
         <a href="{{ route('pengumumanadmin') }}" class="md:green hover:green md:text-sm text-white text-xs py-2 px-2 mx-4 md:mx-24 inline-block border-b-2 border-white pb-1">PENGUMUMAN </a>
       </div>
 
+      <div class="flex justify-center pt-5">
+        <div class="bg-white w-5/6 md:w-1/2 lg:w-1/3 xl:w-1/4 p-16 rounded-lg relative">
+            <div class="flex absolute top-0 left-0 p-3">
+                <img src="img/message.png" class="h-6 w-6" alt="">
+                <p class="font-semibold text-abu2 pl-2">Pengumuman</p>
+            </div>
+        </div>
+      </div>
+      
+
       <footer class="text-gray-500 mt-4 fixed bottom-3 w-full">
         <div class="container mx-auto text-center">
             <p class="text-xs md:text-sm">&copy; 2024. All Right Reserved. By Punokawan Project</p>

@@ -196,7 +196,7 @@
                 </div>
               <div class="text-center text-gray-700">
                 <p class="py-4">Nama : Nagita Slavina </p>
-                <p class="py-4">Pekerjaan : Artisa</p>
+                <p class="py-4">Pekerjaan : Artis</p>
                 <p class="py-4">No.Hp : +62897563456</p>
               </div>
               </div>

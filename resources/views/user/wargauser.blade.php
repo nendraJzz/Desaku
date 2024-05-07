@@ -93,7 +93,7 @@
         </div>
       </div>
       {{-- End Content --}}
-      <div class="relative">
+      <div class="relative h-screen">
         <button class="fixed bottom-4 right-4 font-bold" onclick="user.showModal()">
           <img src="img/opsi.png" alt="Logo" class="h-13 w-13">
         </button>

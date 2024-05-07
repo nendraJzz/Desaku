@@ -89,7 +89,7 @@
     {{-- about 2 --}}
     <div class="bg-white grid grid-cols-1 md:grid-cols-2">
       <div class="md:ml-36 md:mt-24 px-6 order-last md:order-first">
-        <h1 class="text-4xl font-bold green1 opacity-75">Dengan Desaku</h1>
+        <h1 class="text-4xl font-bold green1 ">Dengan Desaku</h1>
         <h3 class="font-semibold mt-6">Pertukaran informasi efektif</h3>
         <p class="text-sm mt-1">"Desaku" menyediakan platform yang efisien untuk berbagi informasi antara pengurus RT/RW dan warga, memastikan semua anggota komunitas terinformasi tentang kegiatan, pengumuman, dan perubahan penting lainnya.</p>
         <h3 class="font-semibold mt-6">Partisipasi warga meningkat</h3>
