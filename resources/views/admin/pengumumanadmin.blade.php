@@ -38,7 +38,7 @@
         <div class="bg-white w-5/6 md:w-1/2 lg:w-1/3 xl:w-1/4 p-16 rounded-lg relative">
             <div class="flex absolute top-0 left-0 p-3">
                 <img src="img/message.png" class="h-6 w-6" alt="">
-                <p class="font-semibold text-abu2 pl-2">Pengumuman</p>
+                <p class="text-abu2 pl-2"><span class="font-semibold">Pengumuman</span> <br> <span class="text-sm mt-3">Keterangan :</span></p>
             </div>
         </div>
       </div>
