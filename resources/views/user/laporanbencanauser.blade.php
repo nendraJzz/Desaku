@@ -7,11 +7,6 @@
   <title>Laporan Bencana User - Desaku</title>
   <link href="{{ asset('css/landingpage.css') }}" rel="stylesheet">
 </head>
-<style>
-    .bg-gray-300 {
-        min-height: 100vh;
-    }
-</style>
 <body class="bg-gray-300">
   <nav class="green py-2">
     <div class="container mx-auto flex justify-between items-center">
@@ -20,9 +15,9 @@
             <span class="text-sm md:text-2xl text-white ml-4 md:ml-12 font-semibold text-center md:text-left">Desaku</span>
         </div>
         <div>
-            <button class="flex items-center text-white">
-                <img src="img/img/ayu-ting-ting.jpg" alt="Profile" class="rounded-full w-6 h-6 md:w-9 md:h-9 mr-5">
-            </button>
+            <a href ="{{ route('settingprofileuser') }}" class="flex items-center text-white">
+                <img src="img/ayu-ting-ting.jpg" alt="Profile" class="rounded-full w-6 h-6 md:w-9 md:h-9 mr-5">
+            </a>
         </div>
     </div>
 </nav>

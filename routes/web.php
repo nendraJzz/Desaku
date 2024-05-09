@@ -21,36 +21,38 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Interface
-Route::get('/interface', [LandingpageController::class, 'interface'])->name('interface');
 
-// Login
-Route::get('/login', [LoginController::class, 'login'])->name('login');
-Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogin');
-// Logout
-Route::get('/logout',[LoginController::class,'logout'])->name('logout');
+    Route::get('/interface', [LandingpageController::class, 'interface'])->name('interface');
 
-// Admin
-Route::get('/aktivitasadmin', [AdminController::class, 'aktivitasadmin'])->name('aktivitasadmin');
-Route::get('/wargaadmin', [AdminController::class, 'wargaadmin'])->name('wargaadmin');
-Route::get('/pengumumanadmin', [AdminController::class, 'pengumumanadmin'])->name('pengumumanadmin');
-// Admin Setting
-Route::get('/settingprofileadmin', [AdminController::class, 'settingprofileadmin'])->name('settingprofileadmin');
+    Route::get('/login', [LoginController::class, 'login'])->name('login');
+    Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogin');
+    Route::get('/logout',[LoginController::class,'logout'])->name('logout');
 
 
-// Admin opsi
-Route::get('/laporanpencurianadmin', [AdminController::class, 'laporanpencurianadmin'])->name('laporanpencurianadmin');
-Route::get('/laporankebakaranadmin', [AdminController::class, 'laporankebakaranadmin'])->name('laporankebakaranadmin');
-Route::get('/laporanbencanaadmin', [AdminController::class, 'laporanbencanaadmin'])->name('laporanbencanaadmin');
-Route::get('/laporankecelakaanadmin', [AdminController::class, 'laporankecelakaanadmin'])->name('laporankecelakaanadmin');
 
-// User 
-Route::get('/aktivitasuser', [UserController::class, 'aktivitasuser'])->name('aktivitasuser');
-Route::get('/wargauser', [UserController::class, 'wargauser'])->name('wargauser');
-Route::get('/pengumumanuser', [UserController::class, 'pengumumanuser'])->name('pengumumanuser');
+     Route::get('/aktivitasadmin', [AdminController::class, 'aktivitasadmin'])->name('aktivitasadmin');
+     Route::get('/wargaadmin', [AdminController::class, 'wargaadmin'])->name('wargaadmin');
+     Route::get('/pengumumanadmin', [AdminController::class, 'pengumumanadmin'])->name('pengumumanadmin');
 
-// User Opsi
-Route::get('/laporanpencurianuser', [UserController::class, 'laporanpencurianuser'])->name('laporanpencurianuser');
-Route::get('/laporankebakaranuser', [UserController::class, 'laporankebakaranuser'])->name('laporankebakaranuser');
-Route::get('/laporanbencanauser', [UserController::class, 'laporanbencanauser'])->name('laporanbencanauser');
-Route::get('/laporankecelakaanuser', [UserController::class, 'laporankecelakaanuser'])->name('laporankecelakaanuser');
+     Route::get('/settingprofileadmin', [AdminController::class, 'settingprofileadmin'])->name('settingprofileadmin');
+     
+     Route::get('/laporanpencurianadmin', [AdminController::class, 'laporanpencurianadmin'])->name('laporanpencurianadmin');
+     Route::get('/laporankebakaranadmin', [AdminController::class, 'laporankebakaranadmin'])->name('laporankebakaranadmin');
+     Route::get('/laporanbencanaadmin', [AdminController::class, 'laporanbencanaadmin'])->name('laporanbencanaadmin');
+     Route::get('/laporankecelakaanadmin', [AdminController::class, 'laporankecelakaanadmin'])->name('laporankecelakaanadmin');
+     
+     Route::get('/aktivitasuser', [UserController::class, 'aktivitasuser'])->name('aktivitasuser');
+     Route::get('/wargauser', [UserController::class, 'wargauser'])->name('wargauser');
+     Route::get('/pengumumanuser', [UserController::class, 'pengumumanuser'])->name('pengumumanuser');
+
+     Route::get('/settingprofileuser', [UserController::class, 'settingprofileuser'])->name('settingprofileuser');
+     
+     Route::get('/laporanpencurianuser', [UserController::class, 'laporanpencurianuser'])->name('laporanpencurianuser');
+     Route::get('/laporankebakaranuser', [UserController::class, 'laporankebakaranuser'])->name('laporankebakaranuser');
+     Route::get('/laporanbencanauser', [UserController::class, 'laporanbencanauser'])->name('laporanbencanauser');
+     Route::get('/laporankecelakaanuser', [UserController::class, 'laporankecelakaanuser'])->name('laporankecelakaanuser');
+
+    
+
+
+

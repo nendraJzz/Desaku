@@ -7,11 +7,6 @@
   <title>Warga Admin - Desaku</title>
   <link href="{{ asset('css/landingpage.css') }}" rel="stylesheet">
 </head>
-<style>
-  .bg-gray-300 {
-      min-height: 100vh;
-  }
-</style>
 <body class="bg-gray-300">
 
   {{-- Navbar --}}

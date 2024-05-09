@@ -32,3 +32,8 @@
   .text {
     color: #00985b;
   }
+  
+  .bg-gray-300 {
+      min-height: 100vh;
+  }
+

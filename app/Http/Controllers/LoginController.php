@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
+use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -9,6 +11,10 @@ class LoginController extends Controller
 {
     public function login(){
         return view('login.login');
+    }
+
+    public function daftarakun(){
+        return view('login.daftarakun');
     }
 
     public function postlogin(Request $request){

@@ -7,11 +7,6 @@
   <title>Laporan Pencurian Admin - Desaku</title>
   <link href="{{ asset('css/landingpage.css') }}" rel="stylesheet">
 </head>
-<style>
-    .bg-gray-300 {
-        min-height: 100vh;
-    }
-</style>
 <body class="bg-gray-300">
   <nav class="green py-2">
     <div class="container mx-auto flex justify-between items-center">

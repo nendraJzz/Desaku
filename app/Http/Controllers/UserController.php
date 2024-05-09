@@ -30,4 +30,7 @@ class UserController extends Controller
     public function laporankecelakaanuser(){
         return view('user.laporankecelakaanuser');
     }
+    public function settingprofileuser(){
+        return view('user.settingprofileuser');
+    }
 }
