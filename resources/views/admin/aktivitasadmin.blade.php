@@ -22,14 +22,87 @@
     </div>
 </nav>
 
-
     <div class="flex green opacity-80 justify-center px-5">
         <a href="{{ route('aktivitasadmin') }}" class="md:green hover:green md:text-sm text-white text-xs py-2 px-2 mx-4 md:mx-24 inline-block border-b-2 border-white pb-1">AKTIVITAS </a>
         <a href="{{ route('wargaadmin') }}" class="md:green hover:green md:text-sm text-white text-xs py-2 px-2 mx-4 md:mx-24">WARGA </a>
         <a href="{{ route('pengumumanadmin') }}" class="md:green hover:green md:text-sm text-white text-xs py-2 px-2 mx-4 md:mx-24 ">PENGUMUMAN </a>
       </div>
 
-      <div class="relative h-screen">
+      <div class="flex justify-center pt-5">
+        <div class="bg-white w-5/6 md:w-1/2 lg:w-1/3 xl:w-1/4 p-16 rounded-lg relative">
+
+            <div class="flex absolute top-0 left-0 p-3">
+                <img src="img/komeng.jpeg" class="h-7 w-7 mt-0.5 rounded-full" alt="">
+                <p class="text-abu2 pl-2">
+                    <span class="font-semibold text-sm">Laporan Kecelakaan</span> <br>
+                    <span class="text-abu2 text-sm mt-3">Keterangan : </span>
+                </p>
+            </div>
+            <div class="pb-10">
+                <button class="absolute top-0 right-0 p-4 border border-transparent text-green font-semibold rounded-full text-xs">
+                    Konfirmasi
+                </button>
+                <div class="absolute bottom-0 left-8 p-3">
+                    <p class="text-abu2 text-xs">0 Komentar</p>
+                </div>
+                <div class="absolute bottom-0 right-8 p-3">
+                    <p class="text-abu2 text-xs">- Menit yang lalu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="flex justify-center pt-5">
+        <div class="bg-white w-5/6 md:w-1/2 lg:w-1/3 xl:w-1/4 p-16 rounded-lg relative">
+
+            <div class="flex absolute top-0 left-0 p-3">
+                <img src="img/nagita-slavina.jpg" class="h-7 w-7 mt-0.5 rounded-full" alt="">
+                <p class="text-abu2 pl-2">
+                    <span class="font-semibold text-sm">Peringatan kebakaran!!</span> <br>
+                    <span class="text-abu2 text-sm mt-3">Keterangan : </span>
+                </p>
+            </div>
+            <div class="pb-10">
+                <button class="absolute top-0 right-0 p-4 border border-transparent text-green font-semibold rounded-full text-xs">
+                    Konfirmasi
+                </button>
+                <div class="absolute bottom-0 left-8 p-3">
+                    <p class="text-abu2 text-xs">0 Komentar</p>
+                </div>
+                <div class="absolute bottom-0 right-8 p-3">
+                    <p class="text-abu2 text-xs">- Menit yang lalu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <div class="flex justify-center pt-5">
+        <div class="bg-white w-5/6 md:w-1/2 lg:w-1/3 xl:w-1/4 p-16 rounded-lg relative">
+
+            <div class="flex absolute top-0 left-0 p-3">
+                <img src="img/deddy-corbuzier.jpg" class="h-7 w-7 mt-0.5 rounded-full" alt="">
+                <p class="text-abu2 pl-2">
+                    <span class="font-semibold text-sm">Peringatan pencurian!!</span> <br>
+                    <span class="text-abu2 text-sm mt-3">Keterangan : </span>
+                </p>
+            </div>
+            <div class="pb-10">
+                <button class="absolute top-0 right-0 p-4 border border-transparent text-green font-semibold rounded-full text-xs">
+                    Konfirmasi
+                </button>
+                <div class="absolute bottom-0 left-8 p-3">
+                    <p class="text-abu2 text-xs">0 Komentar</p>
+                </div>
+                <div class="absolute bottom-0 right-8 p-3">
+                    <p class="text-abu2 text-xs">- Menit yang lalu</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+      <div class="relative">
         <button class="fixed bottom-4 right-4 font-bold" onclick="my_modal_3.showModal()">
           <img src="img/opsi.png" alt="Logo" class="h-13 w-13">
         </button>
@@ -62,7 +135,7 @@
     </dialog>
 
 
-      <footer class="text-gray-500 mt-4  bottom-3 w-full">
+      <footer class="text-gray-500 mt-4 bottom-3 w-full">
         <div class="container mx-auto text-center">
             <p class="text-xs md:text-sm">&copy; 2024. All Right Reserved. By Punokawan Project</p>
         </div>

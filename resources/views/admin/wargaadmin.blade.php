@@ -52,9 +52,9 @@
                 <img src="img/raffy-ahmad.jpg" class="rounded-full w-24 h-24 " alt="">
               </div>
             <div class="text-center text-gray-700">
-              <p class="py-4">Nama : Raffy Ahmad</p>
-              <p class="py-4">Pekerjaan : Artis</p>
-              <p class="py-4">No.Hp : +628876854778</p>
+              <p class="py-2">Nama : Raffy Ahmad</p>
+              <p class="py-2">Pekerjaan : Artis</p>
+              <p class="py-2">No.Hp : +628876854778</p>
             </div>
             </div>
           </div>
@@ -81,9 +81,9 @@
                   <img src="img/ayu-ting-ting.jpg" class="rounded-full w-24 h-24 " alt="">
                 </div>
               <div class="text-center text-gray-700">
-                <p class="py-4">Nama : Ayu Ting Ting</p>
-                <p class="py-4">Pekerjaan : Artis</p>
-                <p class="py-4">No.Hp : +6287689876543</p>
+                <p class="py-2">Nama : Ayu Ting Ting</p>
+                <p class="py-2">Pekerjaan : Artis</p>
+                <p class="py-2">No.Hp : +6287689876543</p>
               </div>
               </div>
             </div>
@@ -109,9 +109,9 @@
                   <img src="img/deddy-corbuzier.jpg" class="rounded-full w-24 h-24 " alt="">
                 </div>
               <div class="text-center text-gray-700">
-                <p class="py-4">Nama : Deddy Corbuzier</p>
-                <p class="py-4">Pekerjaan : Youtuber</p>
-                <p class="py-4">No.Hp : +6285765787654</p>
+                <p class="py-2">Nama : Deddy Corbuzier</p>
+                <p class="py-2">Pekerjaan : Youtuber</p>
+                <p class="py-2">No.Hp : +6285765787654</p>
               </div>
               </div>
             </div>
@@ -136,9 +136,9 @@
                   <img src="img/komeng.jpeg" class="rounded-full w-24 h-24 " alt="">
                 </div>
               <div class="text-center text-gray-700">
-                <p class="py-4">Nama : Alfiansyah Bustami Komeng</p>
-                <p class="py-4">Pekerjaan : Anggota Dewan</p>
-                <p class="py-4">No.Hp : +6281456574878</p>
+                <p class="py-2">Nama : Alfiansyah Bustami Komeng</p>
+                <p class="py-2">Pekerjaan : Anggota Dewan</p>
+                <p class="py-2">No.Hp : +6281456574878</p>
               </div>
               </div>
             </div>
@@ -163,9 +163,9 @@
                   <img src="img/Luna-Maya.jpeg" class="rounded-full w-24 h-24 " alt="">
                 </div>
               <div class="text-center text-gray-700">
-                <p class="py-4">Nama : Luna Maya</p>
-                <p class="py-4">Pekerjaan : Artis</p>
-                <p class="py-4">No.Hp : +629876854778</p>
+                <p class="py-2">Nama : Luna Maya</p>
+                <p class="py-2">Pekerjaan : Artis</p>
+                <p class="py-2">No.Hp : +629876854778</p>
               </div>
               </div>
             </div>
@@ -190,9 +190,9 @@
                   <img src="img/nagita-slavina.jpg" class="rounded-full w-24 h-24 " alt="">
                 </div>
               <div class="text-center text-gray-700">
-                <p class="py-4">Nama : Nagita Slavina </p>
-                <p class="py-4">Pekerjaan : Artis</p>
-                <p class="py-4">No.Hp : +62897563456</p>
+                <p class="py-2">Nama : Nagita Slavina </p>
+                <p class="py-2">Pekerjaan : Artis</p>
+                <p class="py-2">No.Hp : +62897563456</p>
               </div>
               </div>
             </div>

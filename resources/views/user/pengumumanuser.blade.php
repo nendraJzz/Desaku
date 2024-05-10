@@ -29,6 +29,10 @@
         <a href="{{ route('pengumumanuser') }}" class="md:green hover:green md:text-sm text-white text-xs py-2 px-2 mx-4 md:mx-24 inline-block border-b-2 border-white pb-1">PENGUMUMAN </a>
       </div>
 
+      <div class="flex justify-center items-center md:pt-52 pt-64 text-abu2 font-bold text-lg opacity-70">
+        <h1>Belum Ada Pengumuman Terbaru</h1>
+      </div>
+
       <div class="relative">
         <button class="fixed bottom-4 right-4 font-bold" onclick="user.showModal()">
           <img src="img/opsi.png" alt="Logo" class="h-13 w-13">
