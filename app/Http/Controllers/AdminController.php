@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Aktivitas;
 use Illuminate\Http\Request;
 
 class AdminController extends Controller
 {
     public function aktivitasadmin(){
-        return view('admin.aktivitasadmin');
+        $ak = Aktivitas::all();
+        return view('admin.aktivitasadmin', compact('ak'));
     }
 
     public function wargaadmin(){

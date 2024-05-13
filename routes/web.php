@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AktivitasController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\LandingpageController;
 
@@ -21,6 +22,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+Route::post('/laporkecelekaan', [AktivitasController::class, 'kecelakaan'])->name('laporkec.lapor');
 
     Route::get('/interface', [LandingpageController::class, 'interface'])->name('interface');
 
