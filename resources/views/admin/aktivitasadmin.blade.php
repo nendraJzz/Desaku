@@ -91,7 +91,7 @@
     </dialog>
 
 
-      <footer class="text-gray-500 mt-4 bottom-3 w-full">
+      <footer class="text-gray-500 fixed mt-4 bottom-3 w-full">
         <div class="container mx-auto text-center">
             <p class="text-xs md:text-sm">&copy; 2024. All Right Reserved. By Punokawan Project</p>
         </div>

@@ -3,8 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminController;
-use App\Http\Controllers\AktivitasController;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\AktivitasController;
 use App\Http\Controllers\LandingpageController;
 
 /*
@@ -25,7 +26,10 @@ Route::get('/', function () {
 
 Route::get('/interface', [LandingpageController::class, 'interface'])->name('interface');
 Route::get('/login', [LoginController::class, 'login'])->name('login');
+Route::get('/register', [LoginController::class, 'register'])->name('register');
 Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogin');
+Route::post('/regist', [LoginController::class, 'regist'])->name('regist');
+// Route::post('/upload/profile/image', [ProfileController::class, 'uploadImage'])->name('upload.profile.image');
 
 Route::middleware('auth')->group(function(){
     Route::get('/aktivitasadmin', [AdminController::class, 'aktivitasadmin'])->name('aktivitasadmin');

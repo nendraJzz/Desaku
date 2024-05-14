@@ -6,15 +6,15 @@ use App\Models\User;
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
     public function login(){
-        return view('login.login');
+        return view('auth.login');
     }
-
-    public function daftarakun(){
-        return view('login.daftarakun');
+    public function register(){
+        return view('auth.register');
     }
 
     public function postlogin(Request $request){
@@ -32,5 +32,25 @@ class LoginController extends Controller
     public function logout(){
       Auth::logout();
       return \redirect('/login');
+  }
+
+  public function regist (request $request){
+    $request->validate([
+      'name' => 'required',
+      'email' => 'required|email|unique:users,email',
+      'password' => 'required|min:4',
+      'nohp' => 'required|min:12',
+      'level' => 'required'
+    ]);
+
+    $data['name']  = $request->name;
+    $data['email']  = $request->email;
+    $data['password']  = Hash::make ($request->password);
+    $data['nohp']  = $request->nohp;
+    $data['level']  = $request->level;
+
+    User::create($data);
+
+    return redirect()->route('login');
   }
 }
