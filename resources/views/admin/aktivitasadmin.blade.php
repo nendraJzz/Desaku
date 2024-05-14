@@ -28,14 +28,15 @@
         <a href="{{ route('pengumumanadmin') }}" class="md:green hover:green md:text-sm text-white text-xs py-2 px-2 mx-4 md:mx-24 ">PENGUMUMAN </a>
       </div>
 
-      <div class="flex justify-center pt-5">
+    @foreach ($ak as $item)
+    <div class="flex justify-center pt-5">
         <div class="bg-white w-5/6 md:w-1/2 lg:w-1/3 xl:w-1/4 p-16 rounded-lg relative">
 
             <div class="flex absolute top-0 left-0 p-3">
                 <img src="img/komeng.jpeg" class="h-7 w-7 mt-0.5 rounded-full" alt="">
                 <p class="text-abu2 pl-2">
                     <span class="font-semibold text-sm">Laporan Kecelakaan</span> <br>
-                    <span class="text-abu2 text-sm mt-3">Keterangan : </span>
+                    <span class="text-abu2 text-sm mt-3">Keterangan : {{ $item->text }}<br/><br/>Laporan dari: {{ $item->user->name }}</span>
                 </p>
             </div>
             <div class="pb-10">
@@ -51,54 +52,9 @@
             </div>
         </div>
     </div>
+    @endforeach
 
-      <div class="flex justify-center pt-5">
-        <div class="bg-white w-5/6 md:w-1/2 lg:w-1/3 xl:w-1/4 p-16 rounded-lg relative">
-
-            <div class="flex absolute top-0 left-0 p-3">
-                <img src="img/nagita-slavina.jpg" class="h-7 w-7 mt-0.5 rounded-full" alt="">
-                <p class="text-abu2 pl-2">
-                    <span class="font-semibold text-sm">Peringatan kebakaran!!</span> <br>
-                    <span class="text-abu2 text-sm mt-3">Keterangan : </span>
-                </p>
-            </div>
-            <div class="pb-10">
-                <button class="absolute top-0 right-0 p-4 border border-transparent text-green font-semibold rounded-full text-xs">
-                    Konfirmasi
-                </button>
-                <div class="absolute bottom-0 left-8 p-3">
-                    <p class="text-abu2 text-xs">0 Komentar</p>
-                </div>
-                <div class="absolute bottom-0 right-8 p-3">
-                    <p class="text-abu2 text-xs">- Menit yang lalu</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-      <div class="flex justify-center pt-5">
-        <div class="bg-white w-5/6 md:w-1/2 lg:w-1/3 xl:w-1/4 p-16 rounded-lg relative">
-
-            <div class="flex absolute top-0 left-0 p-3">
-                <img src="img/deddy-corbuzier.jpg" class="h-7 w-7 mt-0.5 rounded-full" alt="">
-                <p class="text-abu2 pl-2">
-                    <span class="font-semibold text-sm">Peringatan pencurian!!</span> <br>
-                    <span class="text-abu2 text-sm mt-3">Keterangan : </span>
-                </p>
-            </div>
-            <div class="pb-10">
-                <button class="absolute top-0 right-0 p-4 border border-transparent text-green font-semibold rounded-full text-xs">
-                    Konfirmasi
-                </button>
-                <div class="absolute bottom-0 left-8 p-3">
-                    <p class="text-abu2 text-xs">0 Komentar</p>
-                </div>
-                <div class="absolute bottom-0 right-8 p-3">
-                    <p class="text-abu2 text-xs">- Menit yang lalu</p>
-                </div>
-            </div>
-        </div>
-    </div>
+     
     
     
 
