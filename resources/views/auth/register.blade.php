@@ -25,7 +25,7 @@
         <div class="text-center">
             <img src="img/logo2.png" alt="Logo" class="mx-auto mb-2 w-16 h-auto">
             <h1 class="text-3xl font-bold text-white">Desaku</h1>
-            <p class="text-white text-xs mt-1">Tetap Terhubung Dengan Warga <br> Dan Lingkungan RT Anda</p>
+            <p class="text-white text-xs mt-1">Tetap Terhubung Dengan Warga<br>Dan Lingkungan RT Anda</p>
         </div>
     </div>
     <form action="/regist" method="POST">
@@ -55,7 +55,6 @@
             </div>
             <input type="password" name="password" value="{{ old('password') }}" placeholder="Masukan password" class="input text-white input-bordered  bg-transparent  w-full max-w-xs" />
           </label>
-
             @error('password')
              <p class="text-white text-xs">{{ $message }}</p>
             @enderror
