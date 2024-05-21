@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('aktivitas', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->string('title');
             $table->string('text');
             $table->timestamps();
         });

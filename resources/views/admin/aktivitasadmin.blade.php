@@ -35,7 +35,7 @@
             <div class="flex absolute top-0 left-0 p-3">
                 <img src="img/komeng.jpeg" class="h-7 w-7 mt-0.5 rounded-full" alt="">
                 <p class="text-abu2 pl-2">
-                    <span class="font-semibold text-sm">Laporan Kecelakaan</span> <br>
+                    <span class="font-semibold text-sm">{{ $item->title }}</span> <br>
                     <span class="text-abu2 text-sm mt-3">Keterangan : {{ $item->text }}<br/><br/>Laporan dari: {{ $item->user->name }}</span>
                 </p>
             </div>
@@ -47,7 +47,7 @@
                     <p class="text-abu2 text-xs">0 Komentar</p>
                 </div>
                 <div class="absolute bottom-0 right-8 p-3">
-                    <p class="text-abu2 text-xs">- Menit yang lalu</p>
+                    <p class="text-abu2 text-xs">{{ \Carbon\Carbon::parse($item->created_at)->diffForHumans() }}</p>
                 </div>
             </div>
         </div>

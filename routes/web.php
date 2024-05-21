@@ -44,6 +44,8 @@ Route::middleware('auth')->group(function(){
     Route::get('/laporanbencanaadmin', [AdminController::class, 'laporanbencanaadmin'])->name('laporanbencanaadmin');
     Route::get('/laporankecelakaanadmin', [AdminController::class, 'laporankecelakaanadmin'])->name('laporankecelakaanadmin');
     
+    Route::post('/laporkanadmin', [AdminController::class, 'laporkanadmin'])->name('laporkanadmin');
+
     Route::get('/aktivitasuser', [UserController::class, 'aktivitasuser'])->name('aktivitasuser');
     Route::get('/wargauser', [UserController::class, 'wargauser'])->name('wargauser');
     Route::get('/pengumumanuser', [UserController::class, 'pengumumanuser'])->name('pengumumanuser');
