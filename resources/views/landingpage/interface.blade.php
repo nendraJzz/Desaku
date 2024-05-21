@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page - Desaku</title>
+  <title>Landing Page — Desaku</title>
   @vite('resources/css/app.css')
   <link href="./output.css" rel="stylesheet">
   <link href="{{ asset('css/landingpage.css') }}" rel="stylesheet">
@@ -56,7 +56,7 @@
     <section id="home z-10 relative" class="md:pt-16 md:pb-8 md:pl-16 green text-white">
       <div class="container">
         <div class="flex flex-wrap pb-32 md:pb-0">
-          <div class=" z-10 w-full self-center md:px-4 md:w-1/2 md:flex-col-reverse md:order-first">
+          <div class="z-10 w-full self-center md:px-4 md:w-1/2 md:flex-col-reverse md:order-first">
             <h1 class="font-bold text-2xl text-center mt-8 md:text-left mb-2 md:text-4xl">Dasaku</h1>
             <p class="text-sm md:mb-4 text-center md:text-left px-2 md:leading-relaxed">Desaku adalah platform yang memudahkan pertukaran informasi di tingkat RT atau RW. Dengan aplikasi "Desaku", interaksi dan koordinasi antarawarga, pengurus RT/RW, dan pemerintah setempat dapat ditingkatkan, menciptakan komunitas yang lebih terinformasi dan terkoneksi.</p>
             <a href="{{ route('login') }}" class="hidden md:inline-block text-sm font-semibold bg-white text-green-800 py-1 px-8 rounded hover:shadow-lg hover:bg-blue-400 hover:text-white hover:opacity-80 transition duration-300 ease-in-out">Get Started</a>

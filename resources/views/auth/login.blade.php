@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login - Desaku</title>
+  <title>Login — Desaku</title>
   @vite('resources/css/app.css')
   <link href="{{ asset('css/landingpage.css') }}" rel="stylesheet">
 
@@ -36,13 +36,13 @@
             <div class="label">
               <span class="label-text text-white" >Email</span>
             </div>
-            <input type="email" name="email" placeholder="Masukan email" class="input text-white input-bordered bg-transparent w-full max-w-xs" />
+            <input type="email" name="email" placeholder="Masukan email" class="input text-white text-sm input-bordered bg-transparent w-full max-w-xs" />
           </label>
           <label class="form-control w-full max-w-xs">
             <div class="label">
               <span class="label-text text-white">Password</span>
             </div>
-            <input type="password" name="password" placeholder="Masukan password" class="input text-white input-bordered  bg-transparent  w-full max-w-xs" />
+            <input type="password" name="password" placeholder="Masukan password" class="input text-white text-sm input-bordered  bg-transparent  w-full max-w-xs" />
           </label>
           <div class="flex justify-center pt-5">
             <button type="submit" class="bg-white hover:bg-gray-300 text-green font-bold py-1.5 px-3 rounded-full transition duration-300 mx-auto w-64">Login</button>

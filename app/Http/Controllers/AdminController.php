@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Aktivitas;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class AdminController extends Controller
 {
@@ -39,7 +40,19 @@ class AdminController extends Controller
         return view('admin.settingprofileadmin');
     }
 
+    public function laporkanadmin(Request $request) {
+        $request->validate([
+            'title' => ['required'],
+            'text' => ['required']
+        ]);
 
+        Aktivitas::create([
+            'user_id' => Auth::id(),
+            'title' => $request->title,
+            'text' => $request->text
+        ]);
 
+        return redirect()->route('aktivitasadmin');
+    }
     
 }
