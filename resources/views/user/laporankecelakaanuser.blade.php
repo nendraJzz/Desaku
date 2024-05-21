@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   @vite('resources/css/app.css')
-  <title>Laporan Kecelakaan User - Desaku</title>
+  <title>Laporan Kecelakaan User — Desaku</title>
   <link href="{{ asset('css/landingpage.css') }}" rel="stylesheet">
 </head>
 <body class="bg-gray-300">
