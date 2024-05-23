@@ -44,8 +44,8 @@
                     Konfirmasi
                 </button>
                 <div class="absolute bottom-0 left-8 p-3">
-                <button class="text-xs" onclick="comment.showModal()">1 Komentar</button>
-                <dialog id="comment" class="modal">
+                <button class="text-xs" onclick="{{$item->id."comment"}}.showModal()">1 Komentar</button>
+                <dialog id="{{$item->id."comment"}}" class="modal">
                 <div class="modal-box">
                     <form method="dialog" class="pb-7">
                     <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
