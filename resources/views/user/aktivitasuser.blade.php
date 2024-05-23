@@ -41,8 +41,8 @@
                 </p>
             </div>
             <div class="pb-10">
-                <button class="absolute top-0 right-0 p-4 border border-transparent text-green font-semibold rounded-full text-xs">
-                    Konfirmasi
+                <button class="absolute top-0 right-0 p-1 border border-transparent text-green font-semibold rounded-full text-xs">
+                    Belum Dikonfirmasi
                 </button>
                 <div class="absolute bottom-0 left-8 p-3">
                 <button class="text-xs" onclick="document.getElementById('{{$item->id}}comment').showModal()">1 Komentar</button>
@@ -51,7 +51,7 @@
                     <form method="dialog" class="pb-7">
                     <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
                     </form>
-                    <div class="w-full bg-white rounded-lg border p-1 md:p-3 m-1">
+                    <div class="w-full bg-white rounded-lg border p-1 md:p-3">
                         <h3 class="font-semibold p-1">Komentar</h3>
                         <div class="flex flex-col gap-5 m-3">
                     

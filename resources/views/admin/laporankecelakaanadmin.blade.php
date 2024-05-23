@@ -37,7 +37,7 @@
                 </div>
                 <p class="text-abu2 ml-7"><span class="text-sm mt-3">Keterangan :</span></p>
             </div>
-            <form class="flex gap-2 w-full mt-2" method="POST" action="{{ route('laporkanadmin')}}" >
+            <form class="flex gap-2 w-full mt-16" method="POST" action="{{ route('laporkanadmin')}}" >
                 <div>
                     @csrf
                     <input type="text" name="title" class="hidden" value="Laporan Kecelakaan" />
