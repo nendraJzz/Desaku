@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html data-theme="light">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -44,7 +44,7 @@
                     Konfirmasi
                 </button>
                 <div class="absolute bottom-0 left-8 p-3">
-                <button class="text-xs" onclick="{{$item->id."comment"}}.showModal()">1 Komentar</button>
+                <button class="text-xs" onclick="document.getElementById('{{$item->id}}comment').showModal()">1 Komentar</button>
                 <dialog id="{{$item->id."comment"}}" class="modal">
                 <div class="modal-box">
                     <form method="dialog" class="pb-7">
