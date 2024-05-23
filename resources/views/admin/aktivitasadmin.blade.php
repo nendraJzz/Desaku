@@ -36,7 +36,7 @@
                 <img src="img/raffy-ahmad.jpg" class="h-7 w-7 mt-0.5 rounded-full" alt="">
                 <p class="text-abu2 pl-2">
                     <span class="font-semibold text-sm">{{ $item->title }}</span> <br>
-                    <span class="text-abu2 text-sm mt-3">Keterangan : {{ $item->text }}<br/><br/>Laporan dari: {{ $item->user->name }}</span>
+                    <span class="text-abu2 text-sm mt-3">Keterangan :  {{ $item->text }}<br/><br/>Laporan dari: {{ $item->user->name }}</span>
                 </p>
             </div>
             <div class="pb-10">
