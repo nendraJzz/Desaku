@@ -2,12 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Aktivitas;
 use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
     public function aktivitasuser(){
-        return view('user.aktivitasuser');
+        $ak = Aktivitas::all();
+        return view('user.aktivitasuser',compact('ak'));
     }
 
     public function wargauser(){
