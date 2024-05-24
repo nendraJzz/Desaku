@@ -41,7 +41,7 @@
                 </p>
             </div>
             <div class="pb-10">
-                <button class="absolute top-0 right-0 p-1 border border-transparent text-green font-semibold rounded-full text-xs">
+                <button class="absolute top-0 right-0 p-1 border border-transparent text-red font-semibold rounded-full text-xs">
                     Belum Dikonfirmasi
                 </button>
                 <div class="absolute bottom-0 left-8 p-3">
