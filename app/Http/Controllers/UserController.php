@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Aktivitas;
+use App\Models\Pengumuman;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
@@ -34,5 +36,20 @@ class UserController extends Controller
     }
     public function settingprofileuser(){
         return view('user.settingprofileuser');
+    }
+
+    public function pengumuman(Request $request) {
+        $request->validate([
+            'title' => ['required'],
+            'text' => ['required']
+        ]);
+
+        Pengumuman::create([
+            'user_id' => Auth::id(),
+            'title' => $request->title,
+            'text' => $request->text
+        ]);
+
+        return redirect()->route('pengumumanuser');
     }
 }

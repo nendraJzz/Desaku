@@ -48,4 +48,8 @@ class User extends Authenticatable
     public function aktivitas() {
         return $this->hasMany(Aktivitas::class);
     }
+    
+    public function pengumuman() {
+        return $this->hasMany(Pengumuman::class);
+    }
 }

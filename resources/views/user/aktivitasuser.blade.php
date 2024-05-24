@@ -41,11 +41,11 @@
                 </p>
             </div>
             <div class="pb-10">
-                <button class="absolute top-0 right-0 p-1 border border-transparent text-red font-semibold rounded-full text-xs">
+                {{-- <button class="absolute top-0 right-0 p-1 border border-transparent text-red font-semibold rounded-full text-xs">
                     Belum Dikonfirmasi
-                </button>
+                </button> --}}
                 <div class="absolute bottom-0 left-8 p-3">
-                <button class="text-xs" onclick="document.getElementById('{{$item->id}}comment').showModal()">1 Komentar</button>
+                <button class="text-xs text-abu2 font-semibold" onclick="document.getElementById('{{$item->id}}comment').showModal()">0 Komentar</button>
                 <dialog id="{{$item->id."comment"}}" class="modal">
                 <div class="modal-box">
                     <form method="dialog" class="pb-7">
@@ -146,7 +146,7 @@
                 </div>
 
                 <div class="absolute bottom-0 right-8 p-3">
-                    <p class="text-abu2 text-xs">{{ \Carbon\Carbon::parse($item->created_at)->diffForHumans() }}</p>
+                    <p class="text-abu2 font-semibold text-xs">{{ \Carbon\Carbon::parse($item->created_at)->diffForHumans() }}</p>
                 </div>
             </div>
         </div>
@@ -186,7 +186,7 @@
     </div>
     </dialog>
 
-      <footer class="text-gray-500 mt-4 bottom-3 w-full">
+      <footer class="text-gray-500 mt-4 fixed bottom-3 w-full">
         <div class="container mx-auto text-center">
             <p class="text-xs md:text-sm">&copy; 2024. All Right Reserved. By Punokawan Project</p>
         </div>

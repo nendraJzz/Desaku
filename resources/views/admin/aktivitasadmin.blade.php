@@ -44,7 +44,7 @@
                     Konfirmasi
                 </button>
                 <div class="absolute bottom-0 left-8 p-3">
-                <button class="text-xs" onclick="document.getElementById('{{$item->id}}comment').showModal()">1 Komentar</button>
+                <button class="text-xs text-abu2 font-semibold" onclick="document.getElementById('{{$item->id}}comment').showModal()">0 Komentar</button>
                 <dialog id="{{$item->id."comment"}}" class="modal">
                 <div class="modal-box">
                     <form method="dialog" class="pb-7">
@@ -145,7 +145,7 @@
                 </div>
 
                 <div class="absolute bottom-0 right-8 p-3">
-                    <p class="text-abu2 text-xs">{{ \Carbon\Carbon::parse($item->created_at)->diffForHumans() }}</p>
+                    <p class="text-abu2 text-xs font-semibold">{{ \Carbon\Carbon::parse($item->created_at)->diffForHumans() }}</p>
                 </div>
             </div>
         </div>
