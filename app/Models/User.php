@@ -23,6 +23,7 @@ class User extends Authenticatable
         'password',
         'nohp',
         'level',
+        'profile_photo',
     ];
 
     /**

@@ -29,7 +29,6 @@ Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/register', [LoginController::class, 'register'])->name('register');
 Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogin');
 Route::post('/regist', [LoginController::class, 'regist'])->name('regist');
-// Route::post('/upload/profile/image', [ProfileController::class, 'uploadImage'])->name('upload.profile.image');
 
 Route::middleware('auth')->group(function(){
     Route::get('/aktivitasadmin', [AdminController::class, 'aktivitasadmin'])->name('aktivitasadmin');
@@ -46,6 +45,7 @@ Route::middleware('auth')->group(function(){
     
     Route::post('/laporkanadmin', [AdminController::class, 'laporkanadmin'])->name('laporkanadmin');
     Route::post('/pengumuman', [UserController::class, 'pengumuman'])->name('pengumuman');
+    Route::post('/profile', [ProfileController::class, 'update'])->name('profile.update');
 
     Route::get('/aktivitasuser', [UserController::class, 'aktivitasuser'])->name('aktivitasuser');
     Route::get('/wargauser', [UserController::class, 'wargauser'])->name('wargauser');
