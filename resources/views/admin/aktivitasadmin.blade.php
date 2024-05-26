@@ -29,9 +29,8 @@
       </div>
 
     @foreach ($ak as $item)
-    <div class="flex justify-center pt-5">
-        <div class="bg-white w-5/6 md:w-1/2 lg:w-1/3 xl:w-1/4 p-16 rounded-lg relative">
-
+    <div class="flex justify-center pt-5 px-5">
+        <div class="bg-white w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-16 rounded-lg relative">
             <div class="flex absolute top-0 left-0 p-3">
                 <img src="img/raffy-ahmad.jpg" class="h-7 w-7 mt-0.5 rounded-full" alt="">
                 <p class="text-abu2 pl-2">
@@ -40,9 +39,9 @@
                 </p>
             </div>
             <div class="pb-10">
-                <button class="absolute top-0 right-0 p-4 border border-transparent text-green font-semibold rounded-full text-xs">
-                    Konfirmasi
-                </button>
+                <div class="tooltip absolute top-0 right-0 p-3 text-xs font-semibold text-white">
+                <button id="confirmButton" class="badge badge-sm badge-outline w-24 whitespace-nowrap bg-grn">Konfirmasi</button>
+                </div>
                 <div class="absolute bottom-0 left-8 p-3">
                 <button class="text-xs text-abu2 font-semibold" onclick="document.getElementById('{{$item->id}}comment').showModal()">0 Komentar</button>
                 <dialog id="{{$item->id."comment"}}" class="modal">
@@ -153,8 +152,6 @@
     @endforeach
 
      
-    
-    
 
       <div class="relative">
         <button class="fixed bottom-4 right-4 font-bold" onclick="my_modal_3.showModal()">

@@ -29,10 +29,9 @@
         <a href="{{ route('pengumumanuser') }}" class="md:green hover:green md:text-sm text-white text-xs py-2 px-2 mx-4 md:mx-24 ">PENGUMUMAN </a>
       </div>
 
-      @foreach ($ak as $item)
-    <div class="flex justify-center pt-5">
-        <div class="bg-white w-5/6 md:w-1/2 lg:w-1/3 xl:w-1/4 p-16 rounded-lg relative">
-
+    @foreach ($ak as $item)
+    <div class="flex justify-center pt-5 px-5">
+        <div class="bg-white w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-16 rounded-lg relative">
             <div class="flex absolute top-0 left-0 p-3">
                 <img src="img/raffy-ahmad.jpg" class="h-7 w-7 mt-0.5 rounded-full" alt="">
                 <p class="text-abu2 pl-2">
@@ -41,9 +40,9 @@
                 </p>
             </div>
             <div class="pb-10">
-                {{-- <button class="absolute top-0 right-0 p-1 border border-transparent text-red font-semibold rounded-full text-xs">
-                    Belum Dikonfirmasi
-                </button> --}}
+                <div class="tooltip absolute top-0 right-0 p-3 text-xs font-semibold text-red">
+                <button class="badge badge-sm badge-outline w-32 whitespace-nowrap">Belum Dikonfirmasi</button>
+                </div>
                 <div class="absolute bottom-0 left-8 p-3">
                 <button class="text-xs text-abu2 font-semibold" onclick="document.getElementById('{{$item->id}}comment').showModal()">0 Komentar</button>
                 <dialog id="{{$item->id."comment"}}" class="modal">
