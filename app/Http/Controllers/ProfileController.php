@@ -22,10 +22,10 @@ class ProfileController extends Controller
     //             Storage::delete($user->profile_photo);
     //         }
 
-    //         // Store new profile photo
+    //         
     //         $path = $request->file('profile_photo')->store('profile_photos');
 
-    //         // Update user profile photo path
+    //         
     //         $user->profile_photo = $path;
     //         $user->save();
             

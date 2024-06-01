@@ -33,7 +33,11 @@
     <div class="flex justify-center pt-5 px-5">
         <div class="bg-white w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-16 rounded-lg relative">
             <div class="flex absolute top-0 left-0 p-3">
+                @if($item->user->level === "admin")
                 <img src="img/raffy-ahmad.jpg" class="h-7 w-7 mt-0.5 rounded-full" alt="">
+                @else
+                <img src="img/ayu-ting-ting.jpg" class="h-7 w-7 mt-0.5 rounded-full" alt="">
+                @endif
                 <p class="text-abu2 pl-2">
                     <span class="font-semibold text-sm">{{ $item->title }}</span> <br>
                     <span class="text-abu2 text-sm mt-3">Keterangan : {{ $item->text }}<br/><br/>Laporan dari: {{ $item->user->name }}</span>
