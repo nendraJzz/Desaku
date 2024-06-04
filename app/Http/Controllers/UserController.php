@@ -12,7 +12,7 @@ class UserController extends Controller
 {
     public function aktivitasuser(){
         $ak = Aktivitas::all();
-        return view('user.aktivitasuser',compact('ak'));
+        return view('user.aktivitasuser', compact('ak'));
     }
 
     public function wargauser(){

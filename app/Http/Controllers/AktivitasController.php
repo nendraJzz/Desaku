@@ -17,7 +17,9 @@ class AktivitasController extends Controller
             'user_id' => Auth::id(),
             'text' => $request->text
         ]);
-
-        return redirect()->route('aktivitasadmin');
+        
+        if(Auth::user()->level === "admin") 
+            return redirect()->route('aktivitasadmin');
+        return redirect()->route('aktivitasuser');
     }
 }

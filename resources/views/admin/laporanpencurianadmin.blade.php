@@ -30,22 +30,20 @@
       </div>
 
       <div class="flex justify-center pt-5">
-        <div class="bg-white w-5/6 md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 rounded-lg ">
+        <div class="bg-white w-5/6 md:w-1/2 lg:w-1/3 xl:w-1/4 p-4 rounded-lg">
             <div>
                 <div class="flex">
                     <img src="img/icon-key.png" class="h-6 w-7 pt-0.5" alt="">
-                    <h1 class="font-semibold text-abu2">Laporkan Pencurian</h1>
+                    <h1 class="font-semibold text-abu2 ml-2">Laporkan Pencurian</h1>
                 </div>
                 <p class="text-abu2 ml-7"><span class="text-sm mt-3">Keterangan :</span></p>
             </div>
-            <form class="flex gap-2 w-full mt-2" method="POST" action="{{ route('laporkanadmin')}}" >
-                <div>
-                    @csrf
-                    <input type="text" name="title" class="hidden" value="Laporan Pencurian" />
-                    <input name="text" type="text" placeholder="Laporkan Pencurian" class="input input-bordered ml-2 input-xs w-64" />
-                </div>
-                <button type="submit">
-                    <svg viewBox="0 0 32 32" class="h-5 w-5" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#929292" stroke="#929292"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>arrow-right-circle</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set-Filled" sketch:type="MSLayerGroup" transform="translate(-310.000000, -1089.000000)" fill="#929292"> <path d="M332.535,1105.88 L326.879,1111.54 C326.488,1111.93 325.855,1111.93 325.465,1111.54 C325.074,1111.15 325.074,1110.51 325.465,1110.12 L329.586,1106 L319,1106 C318.447,1106 318,1105.55 318,1105 C318,1104.45 318.447,1104 319,1104 L329.586,1104 L325.465,1099.88 C325.074,1099.49 325.074,1098.86 325.465,1098.46 C325.855,1098.07 326.488,1098.07 326.879,1098.46 L332.535,1104.12 C332.775,1104.36 332.85,1104.69 332.795,1105 C332.85,1105.31 332.775,1105.64 332.535,1105.88 L332.535,1105.88 Z M326,1089 C317.163,1089 310,1096.16 310,1105 C310,1113.84 317.163,1121 326,1121 C334.837,1121 342,1113.84 342,1105 C342,1096.16 334.837,1089 326,1089 L326,1089 Z" id="arrow-right-circle" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg>
+            <form class="w-full mt-2" method="POST" action="{{ route('laporkanadmin') }}">
+                @csrf
+                <input type="text" name="title" class="hidden" value="Laporan Pencurian" />
+                <textarea name="text" class="textarea textarea-bordered w-full bg-transparent" placeholder="Laporan Pencurian"></textarea>
+                <button type="submit" class="w-full mt-2 py-2.5 bg-emerald-700 text-white text-sm font-semibold rounded-lg hover:bg-emerald-600 focus:ring-4 focus:ring-blue-300">
+                    Kirim
                 </button>
             </form>
         </div>

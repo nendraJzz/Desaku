@@ -52,7 +52,9 @@ class AdminController extends Controller
             'text' => $request->text
         ]);
 
-        return redirect()->route('aktivitasadmin');
+        if(Auth::user()->level === "admin") 
+            return redirect()->route('aktivitasadmin');
+        return redirect()->route('aktivitasuser');
     }
     
 }
