@@ -42,7 +42,7 @@
                     <span class="text-abu2 text-sm mt-3">Keterangan :  {{ $item->text }}</span>
                 </p>
             </div>
-            <div class="pb-4">
+            <div class="">
                 <div class="absolute bottom-0 left-8 p-3">
                     <p class="text-abu2 text-xs font-semibold">{{ \Carbon\Carbon::parse($item->created_at)->diffForHumans() }}</p>
                 </div>
