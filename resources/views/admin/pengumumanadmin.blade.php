@@ -41,7 +41,7 @@
             <form class="w-full mt-2" method="POST" action="{{ route('laporkanadmin') }}">
                 @csrf
                 <input type="text" name="title" class="hidden" value="Pengumuman" />
-                <textarea name="text" class="textarea textarea-bordered w-full bg-transparent" placeholder="Laporan Pencurian"></textarea>
+                <textarea name="text" class="textarea textarea-bordered w-full bg-transparent" placeholder="Laporan Pengumuman"></textarea>
                 <button type="submit" class="w-full mt-2 py-2.5 bg-emerald-700 text-white text-sm font-semibold rounded-lg hover:bg-emerald-600 focus:ring-4 focus:ring-blue-300">
                     Kirim
                 </button>

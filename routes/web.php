@@ -19,12 +19,12 @@ use App\Http\Controllers\LandingpageController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 
-Route::get('/interface', [LandingpageController::class, 'interface'])->name('interface');
+Route::get('/', [LandingpageController::class, 'interface'])->name('interface');
 Route::get('/login', [LoginController::class, 'login'])->name('login');
 Route::get('/register', [LoginController::class, 'register'])->name('register');
 Route::post('/postlogin', [LoginController::class, 'postlogin'])->name('postlogin');

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Laporan;
 use App\Models\Aktivitas;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -56,5 +57,4 @@ class AdminController extends Controller
             return redirect()->route('aktivitasadmin');
         return redirect()->route('aktivitasuser');
     }
-    
 }
